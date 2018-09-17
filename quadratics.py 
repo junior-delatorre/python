@@ -1,0 +1,35 @@
+'''
+quadratic equation root calculator 
+'''
+# quadratics.py
+def roots(a, b, c): 
+
+	D = (b*b - 4*a*c)**0.5 # DISCRIMINANT 
+	x_1 = (-b + D) / (2 * a)
+	x_2 = (-b - D) / (2 * a)
+	print ('x1: {0}'.format(x_1)) 
+	print ('x2: {0}'.format(x_2))
+	
+if __name__=='__main__':
+	a = input ('Enter a: ') 
+	b = input ('Enter b: ')
+	c = input ('Enter c: ')
+	roots(float(a),float(b),float(c)) 
+	
+'''
+console output
+junior@flybird:~/python$ python3 quadratics.py 
+enter a: 1
+enter b: 0 
+enter c: -9
+x1: 3.0 
+x2: -3.0 
+junior@flybird:~/python$ python3 quadratics.py 
+enter a: 1 
+enter b: 0
+enter c: 9 
+x1: (1.8369701987210297e-16+3j)
+x2: (-1.8369701987210297e-16-3j)
+junior@flybird:~/python$
+
+'''
