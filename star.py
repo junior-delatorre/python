@@ -1,13 +1,11 @@
-# Star.py
+#import turtle
+c = 0
+while(c < 180):
 
-print() from '/usr/lib/python2.6/lib-tk/turtle.pyc'>
-import turtle
- 
-star = turtle.screen
-star = turtle.Turtle()
+t.right(45)
+t.forward(300)
+t.left(90)
+t.back(150)
+t.right(45)
+t.back(250)
 
-for i in range(50):
-    star.forward(50)
-    star.right(144)
-    
-turtle.done()
